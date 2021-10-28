@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+  <script src="script.js"></script>
+  <meta charset="utf-8">
+  <title>ハイスピ計算</title>
+</head>
+<body>
+  BPM
+  <input type="number" id="input" size="3" name="bpminput" value="0" maxlength="3">
+  <button type="button" id="start" onclick="calc()" name="button">　計算　</button>
+  <button type="button" id="reset" onclick="reset" name="button">リセット</button>
+  <div>
+    <table id='table' border="1" bgcolor="lightgreen" style="border-collapse:collapse">
+      <tr><td>HS</td><td>NUM</td></tr>
+    </table>
+  </div>
+</body>
+</html>
