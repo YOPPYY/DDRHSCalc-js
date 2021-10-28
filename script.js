@@ -19,3 +19,8 @@ function calc(){
         cell.innerText=(value*hs[i]).toFixed(2);
   }
 }
+
+function reset(){
+  let value=document.getElementById("input").value="";
+
+}

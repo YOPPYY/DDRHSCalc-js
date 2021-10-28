@@ -8,9 +8,10 @@
 </head>
 <body>
   BPM
-  <input type="number" id="input" size="3" name="bpminput" value="0" maxlength="3">
+  <input type="number" id="input" size="3" name="bpminput" value=""   oninput="javascript:if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+  maxlength="3">
   <button type="button" id="start" onclick="calc()" name="button">　計算　</button>
-  <button type="button" id="reset" onclick="reset" name="button">リセット</button>
+  <button type="button" id="reset" onclick="reset()" name="button">リセット</button>
   <div>
     <table id='table' border="1" bgcolor="lightgreen" style="border-collapse:collapse">
       <tr><td>HS</td><td>NUM</td></tr>
